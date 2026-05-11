@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Élan Rouge | Nutrición Antianemia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
+        <style>
+            body { font-family: 'Poppins', sans-serif; background-color: #fcfaf8; scroll-behavior: smooth; }
+            .navbar { background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            .navbar-brand img { height: 50px; }
+            
+            /* Colores de marca */
+            .text-elan-rouge { color: #7a1b2a; } 
+            .bg-elan-green { background-color: #1e3d2b; color: white; }
+            .btn-elan { background-color: #7a1b2a; color: white; border-radius: 25px; padding: 10px 30px; border: none; }
+            .btn-elan:hover { background-color: #5a1420; color: #eee; }
+
+            /* Carrusel */
+            .carousel-item { height: 70vh; background: no-repeat center center scroll; background-size: cover; }
+            .carousel-caption { background: rgba(0, 0, 0, 0.6); border-radius: 15px; padding: 2rem; bottom: 15%; }
+
+            /* Tarjetas de Beneficios y Diferenciación */
+            .diff-icon { font-size: 3rem; color: #d4af37; margin-bottom: 15px; }
+            .feature-box { padding: 30px; background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); height: 100%; border-bottom: 4px solid #7a1b2a; transition: 0.3s; }
+            .feature-box:hover { transform: translateY(-10px); }
+
+            /* Redes Sociales */
+            .social-btn { 
+                width: 50px; height: 50px; display: inline-flex; align-items: center; justify-content: center; 
+                border-radius: 50%; color: white; margin: 0 10px; font-size: 1.5rem; transition: 0.3s; text-decoration: none;
+            }
+            .facebook { background: #3b5998; }
+            .instagram { background: #e4405f; }
+            .tiktok { background: #000000; }
+            .whatsapp { background: #25d366; }
+            .social-btn:hover { transform: scale(1.1); color: white; opacity: 0.9; }
+            
+            .img-rounded { border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo.jpeg" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#producto">¿Qué es?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-elan ms-lg-3 mt-2 mt-lg-0" href="https://wa.me/51999999999" target="_blank">Pedir WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="inicio" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('img/banner3.jpeg');">
+                    <div class="carousel-caption">
+                        <h2 class="display-4 fw-bold">Nutrición que Transforma Vidas</h2>
+                        <p class="lead">Compota funcional diseñada para combatir la anemia de forma natural.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('img/banner1.jpeg');">
+                    <div class="carousel-caption">
+                        <h2 class="display-4 fw-bold">Sabor 100% Natural</h2>
+                        <p class="lead">Sin preservantes, colorantes ni azúcares añadidos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="producto" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="text-elan-rouge fw-bold mb-4">¿Qué es Élan Rouge?</h2>
+                        <p>Es una <strong>compota funcional antianemia</strong> diseñada como un alimento listo para el consumo que combina nutrición y salud en un solo producto.</p>
+                        <p>Está elaborada a base de ingredientes naturales ricos en hierro, complementados con vitamina C para favorecer su correcta absorción en el organismo, y una base de frutas que aporta un sabor dulce natural agradable al paladar.</p>
+                        <p>Ideal para niños desde los <strong>seis meses de edad</strong>, adolescentes y mujeres en edad fértil.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/banner2.jpeg" class="img-fluid img-rounded" alt="Producto Élan Rouge">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="py-5 bg-white">
+            <div class="container text-center">
+                <h2 class="text-elan-rouge fw-bold mb-5">Nuestros Beneficios</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <i class="fas fa-shield-virus diff-icon"></i>
+                            <h4>Sistema Inmunológico</h4>
+                            <p>Fortalece las defensas naturales del cuerpo gracias a su alto contenido de vitaminas y minerales.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <i class="fas fa-brain diff-icon"></i>
+                            <h4>Desarrollo Cognitivo</h4>
+                            <p>Contribuye al desarrollo físico y mental, mejorando la concentración y energía diaria.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <i class="fas fa-heartbeat diff-icon"></i>
+                            <h4>Prevención de Anemia</h4>
+                            <p>Su fórmula con hierro y Vitamina C es la herramienta perfecta para combatir la deficiencia de hemoglobina.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diferencia" class="py-5">
+            <div class="container text-center">
+                <h2 class="text-elan-rouge fw-bold mb-5">¿Por qué somos diferentes?</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <i class="fas fa-vial diff-icon"></i>
+                            <h4>Fórmula Científica</h4>
+                            <p>Optimizamos la absorción de hierro combinándolo con Vitamina C pura de origen natural.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <i class="fas fa-leaf diff-icon"></i>
+                            <h4>Etiqueta Limpia</h4>
+                            <p>100% libre de preservantes y colorantes artificiales. Salud pura en cada cucharada.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <i class="fas fa-child diff-icon"></i>
+                            <h4>Aceptación Infantil</h4>
+                            <p>Sabor y textura diseñados para que los más pequeños disfruten su nutrición sin problemas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="bg-elan-green py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-5">
+                        <h2 class="mb-4">Escríbenos</h2>
+                        <form class="p-4 bg-white rounded shadow text-dark">
+                            <div class="mb-3">
+                                <label class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" placeholder="Ej. María García">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" placeholder="nombre@correo.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mensaje o Pedido</label>
+                                <textarea class="form-control" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-elan w-100">Enviar Mensaje</button>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 ps-lg-5 text-center text-lg-start">
+                        <h2 class="mb-4">¿Dónde encontrarnos?</h2>
+                        <p class="lead mb-4">Estamos listos para atender tus dudas sobre nutrición infantil y pedidos.</p>
+                        
+                        <div class="mb-4">
+                            <h5>Síguenos en nuestras redes:</h5>
+                            <div class="mt-3">
+                                <a href="https://facebook.com" target="_blank" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://instagram.com" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://tiktok.com" target="_blank" class="social-btn tiktok"><i class="fab fa-tiktok"></i></a>
+                                <a href="https://wa.me/51999999999" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <p><i class="fas fa-envelope me-2"></i> contacto@elanrouge.com</p>
+                            <p><i class="fas fa-map-marker-alt me-2"></i> Piura, Perú</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-4 text-center bg-white border-top">
+            <p class="mb-0 text-muted">&copy; 2026 Élan Rouge - Nutrición que Transforma Vidas</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
